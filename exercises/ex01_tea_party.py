@@ -1,4 +1,4 @@
-"""This program will plan a tea party by calculating the quantity of tea bags needed, number of treats to have with the tea, and the expected cost of the party."""
+"""Plans a tea party by calculating the quantity of tea bags needed, number of treats to have with the tea, and the expected cost of the party."""
 
 __author__: str = "730740592"
 
