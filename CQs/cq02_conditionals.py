@@ -5,7 +5,7 @@ __author__ = "730740592"
 
 def guess_a_number() -> None:
     secret: int = 7
-    x: int = input("Guess a number: ")
+    x: int = int(input("Guess a number: "))
     print("Your guess was " + str(x))
     if int(x) == secret:
         print("You got it!")
