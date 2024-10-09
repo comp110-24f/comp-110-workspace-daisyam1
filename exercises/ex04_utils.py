@@ -12,11 +12,15 @@ def all(input: list[int], num: int) -> bool:
         num(int): the number to compare each element to.
 
     Returns:
-        bool: True if all elements in the list are equal to the given number, False otherwise.
+        bool: True if all elements in the list are equal to
+        the given number, False otherwise.
     """
+    # If the input list is empty, return False
+    if len(input) == 0:
+        return False
+
     # Initialize the index for iteration
     i: int = 0
-    # Counter to track how many elements match the number
     counter: int = 0
     # Iterate through the list to check each element
     while i < len(input):
@@ -25,10 +29,7 @@ def all(input: list[int], num: int) -> bool:
             counter += 1
         i += 1
     # Return True if all elements matched the number, otherwise return False.
-    if counter == len(input):
-        return True
-    else:
-        return False
+    return counter == len(input)
 
 
 def max(input: list[int]) -> int:
